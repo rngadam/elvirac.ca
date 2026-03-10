@@ -257,7 +257,7 @@
                     </div>
                     <div class="border-2 border-pm-navy p-6 rounded-xl bg-blue-50/30 text-right">
                         <h3 class="font-bold text-xl mb-3">📞 311 پر کال کریں</h3>
-                        <p class="text-sm text-gray-600 mb-4">بلدیاتی خدمات کے بارے میں کسی بھی سوال کے لیے ہفتے کے 7 دن ایجنٹ سے بات کریں۔</p>
+                        <p class="text-sm text-gray-600 mb-4">بلدیاتی خدمات کے بارے में کسی بھی سوال کے لیے ہفتے کے 7 دن ایجنٹ سے بات کریں۔</p>
                         <p class="font-bold text-pm-navy text-center text-lg mt-2">311 ڈائل کریں</p>
                     </div>
                 </div>
@@ -301,13 +301,16 @@
 
     <footer class="bg-gray-100 py-10 mt-12 border-t text-center text-sm text-gray-500">
         <div class="container mx-auto px-4">
-            <p class="font-bold text-pm-navy mb-1 uppercase tracking-widest">Projet Montréal • District de Parc-Extension</p>
+            <p class="font-bold text-pm-navy mb-1 uppercase tracking-widest text-white">Projet Montréal • District de Parc-Extension</p>
             <p>© 2025 Bureau de la conseillère Elvira Carhuallanqui</p>
         </div>
     </footer>
 
     <script>
-        function switchLang(lang) {
+        /**
+         * Change la langue affichée et met à jour l'URL (hash)
+         */
+        function switchLang(lang, updateHash = true) {
             document.querySelectorAll('.lang-section').forEach(section => {
                 section.classList.remove('active');
             });
@@ -325,8 +328,27 @@
             }
             
             document.body.dir = (lang === 'ur') ? 'rtl' : 'ltr';
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            
+            // Mise à jour de l'URL sans recharger la page
+            if (updateHash) {
+                history.pushState(null, null, '#' + lang);
+            }
         }
+
+        // Détection automatique de la langue via le Hash au chargement
+        window.addEventListener('load', () => {
+            const hash = window.location.hash.replace('#', '');
+            const validLangs = ['fr', 'en', 'es', 'gr', 'pa', 'bn', 'ur', 'hi'];
+            if (hash && validLangs.includes(hash)) {
+                switchLang(hash, false);
+            }
+        });
+
+        // Gestion du bouton "Retour" du navigateur
+        window.addEventListener('popstate', () => {
+            const hash = window.location.hash.replace('#', '') || 'fr';
+            switchLang(hash, false);
+        });
     </script>
 </body>
 </html>
