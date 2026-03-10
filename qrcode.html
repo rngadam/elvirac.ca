@@ -70,11 +70,14 @@
             <p class="text-lg text-gray-600">Scannez le code pour voir le guide 311 dans votre langue :</p>
         </div>
 
-        <!-- Grille des QR Codes -->
+        <!-- Grille des QR Codes (Encodage %23 pour le #) -->
         <div class="grid grid-cols-2 gap-x-8 gap-y-4 flex-grow px-4">
+            
+            <!-- Chaque URL utilise %23 pour s'assurer que le hash # est inclus dans les données du QR -->
+            
             <!-- Français -->
             <div class="flex items-center space-x-4 p-2 border-b border-gray-100">
-                <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://rngadam.github.io/311/#fr" class="w-20 h-20" alt="QR Français">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://rngadam.github.io/311/%23fr" class="w-20 h-20" alt="QR Français">
                 <div>
                     <span class="font-bold text-pm-navy block text-lg">Français</span>
                     <span class="text-xs text-gray-400">#fr</span>
@@ -83,7 +86,7 @@
 
             <!-- English -->
             <div class="flex items-center space-x-4 p-2 border-b border-gray-100">
-                <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://rngadam.github.io/311/#en" class="w-20 h-20" alt="QR English">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://rngadam.github.io/311/%23en" class="w-20 h-20" alt="QR English">
                 <div>
                     <span class="font-bold text-pm-navy block text-lg">English</span>
                     <span class="text-xs text-gray-400">#en</span>
@@ -92,7 +95,7 @@
 
             <!-- Español -->
             <div class="flex items-center space-x-4 p-2 border-b border-gray-100">
-                <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://rngadam.github.io/311/#es" class="w-20 h-20" alt="QR Español">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://rngadam.github.io/311/%23es" class="w-20 h-20" alt="QR Español">
                 <div>
                     <span class="font-bold text-pm-navy block text-lg">Español</span>
                     <span class="text-xs text-gray-400">#es</span>
@@ -101,7 +104,7 @@
 
             <!-- Greek -->
             <div class="flex items-center space-x-4 p-2 border-b border-gray-100">
-                <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://rngadam.github.io/311/#gr" class="w-20 h-20" alt="QR Greek">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://rngadam.github.io/311/%23gr" class="w-20 h-20" alt="QR Greek">
                 <div>
                     <span class="font-bold text-pm-navy block text-lg">Ελληνικά</span>
                     <span class="text-xs text-gray-400">#gr</span>
@@ -110,7 +113,7 @@
 
             <!-- Punjabi -->
             <div class="flex items-center space-x-4 p-2 border-b border-gray-100">
-                <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://rngadam.github.io/311/#pa" class="w-20 h-20" alt="QR Punjabi">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://rngadam.github.io/311/%23pa" class="w-20 h-20" alt="QR Punjabi">
                 <div>
                     <span class="font-bold text-pm-navy block text-lg">ਪੰਜਾਬੀ</span>
                     <span class="text-xs text-gray-400">#pa</span>
@@ -119,7 +122,7 @@
 
             <!-- Bengali -->
             <div class="flex items-center space-x-4 p-2 border-b border-gray-100">
-                <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://rngadam.github.io/311/#bn" class="w-20 h-20" alt="QR Bengali">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://rngadam.github.io/311/%23bn" class="w-20 h-20" alt="QR Bengali">
                 <div>
                     <span class="font-bold text-pm-navy block text-lg">বাংলা</span>
                     <span class="text-xs text-gray-400">#bn</span>
@@ -128,7 +131,7 @@
 
             <!-- Urdu -->
             <div class="flex items-center space-x-4 p-2 border-b border-gray-100">
-                <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://rngadam.github.io/311/#ur" class="w-20 h-20" alt="QR Urdu">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://rngadam.github.io/311/%23ur" class="w-20 h-20" alt="QR Urdu">
                 <div>
                     <span class="font-bold text-pm-navy block text-lg">اردو</span>
                     <span class="text-xs text-gray-400">#ur</span>
@@ -137,7 +140,7 @@
 
             <!-- Hindi -->
             <div class="flex items-center space-x-4 p-2 border-b border-gray-100">
-                <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://rngadam.github.io/311/#hi" class="w-20 h-20" alt="QR Hindi">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://rngadam.github.io/311/%23hi" class="w-20 h-20" alt="QR Hindi">
                 <div>
                     <span class="font-bold text-pm-navy block text-lg">हिन्दी</span>
                     <span class="text-xs text-gray-400">#hi</span>
@@ -154,7 +157,7 @@
         <!-- Pied de affiche -->
         <div class="mt-6 flex justify-between items-end border-t border-gray-100 pt-4">
             <div>
-                <p class="text-[10px] font-bold text-pm-navy uppercase tracking-widest">Projet Montréal • Parc-Extension</p>
+                <p class="text-[10px] font-bold text-pm-navy uppercase tracking-widest text-white">Projet Montréal • Parc-Extension</p>
                 <p class="text-xs text-gray-600 font-medium">elvira.carhuallanqui@montreal.ca</p>
             </div>
             <div class="text-right">
