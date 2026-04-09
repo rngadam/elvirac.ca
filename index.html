@@ -4,28 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elvira Carhuallanqui - Guide 311 Parc-Extension</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         :root {
-            --pm-cyan: #00A9CE;
-            --pm-navy: #003366;
-            --pm-white: #FFFFFF;
+            --pe-text-main: #333333;
+            --pe-orange: #ff7400;
+            --pe-gray-light: #EEEEEE;
+            --pe-gray-footer: #F5F5F5;
+            --pe-gray-text: #595959;
         }
         body {
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            color: var(--pm-navy);
+            font-family: 'Inter', 'Poppins', 'Roboto', sans-serif;
+            color: var(--pe-text-main);
         }
-        .bg-pm-cyan { background-color: var(--pm-cyan); }
-        .text-pm-cyan { color: var(--pm-cyan); }
-        .bg-pm-navy { background-color: var(--pm-navy); }
-        .border-pm-cyan { border-color: var(--pm-cyan); }
-        
         .lang-section { display: none; }
         .lang-section.active { display: block; }
         
         .nav-tab.active {
-            border-bottom: 4px solid var(--pm-cyan);
-            color: var(--pm-cyan);
+            border-bottom: 4px solid var(--pe-orange);
+            color: var(--pe-orange);
             font-weight: bold;
         }
         .animate-fade-in {
@@ -37,27 +37,20 @@
         }
     </style>
 </head>
-<body class="bg-gray-50">
-
-    <!-- Note de prototype -->
-    <div class="bg-red-600 text-white text-center py-2 px-4 font-bold uppercase text-sm tracking-wider sticky top-0 z-[60]">
-        ⚠️ Prototype non-approuvé — Pour fins de test uniquement
-    </div>
+<body class="bg-white">
 
     <!-- En-tête -->
-    <header class="bg-pm-navy text-white py-6 shadow-md">
+    <header class="bg-white py-6 shadow-md border-b border-[var(--pe-gray-light)]">
         <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
             <div class="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4 mb-4 md:mb-0">
-                <div class="w-20 h-20 rounded-full border-2 border-pm-cyan overflow-hidden bg-white shadow-inner">
-                    <img src="https://projetmontreal.org/equipe/elvira-carhuallanqui" alt="Elvira Carhuallanqui" onerror="this.src='https://ui-avatars.com/api/?name=Elvira+Carhuallanqui&background=00A9CE&color=fff'" class="object-cover w-full h-full">
-                </div>
+                <div class="w-20 h-20 rounded-full border border-[var(--pe-gray-light)] bg-white flex items-center justify-center text-[var(--pe-orange)] font-bold text-2xl">EC</div>
                 <div>
-                    <h1 class="text-2xl font-bold leading-tight text-white">Elvira Carhuallanqui</h1>
-                    <p class="text-pm-cyan font-medium">Conseillère de la ville • Parc-Extension</p>
+                    <h1 class="text-2xl font-bold leading-tight text-[var(--pe-text-main)]">Elvira Carhuallanqui</h1>
+                    <p class="text-[var(--pe-text-main)] font-medium">Conseillère de la ville • Parc-Extension</p>
                 </div>
             </div>
             <div class="hidden md:block">
-                <span class="text-xs opacity-70 uppercase tracking-[0.2em] font-bold text-white">Projet Montréal</span>
+                <span class="text-xs opacity-70 uppercase tracking-[0.2em] font-bold text-[var(--pe-text-main)]">Projet Montréal</span>
             </div>
         </div>
     </header>
@@ -81,29 +74,29 @@
         <!-- Contenu : FR -->
         <section id="lang-fr" class="lang-section active animate-fade-in">
             <div class="bg-white rounded-2xl shadow-xl p-8">
-                <h2 class="text-3xl font-bold mb-4 text-pm-navy">Votre pouvoir d'agir sur Parc-Extension</h2>
+                <h2 class="text-3xl font-bold mb-4 text-[var(--pe-text-main)]">Votre pouvoir d'agir sur Parc-Extension</h2>
                 <p class="text-lg text-gray-600 mb-8 leading-relaxed">
                     Chaque signalement est une action concrète pour notre quartier. En utilisant le 311, vous devenez les yeux de la Ville. <strong>Votre intervention est essentielle</strong> pour maintenir notre milieu de vie propre et sécuritaire.
                 </p>
                 <div class="grid md:grid-cols-2 gap-6 mb-10">
-                    <div class="border-2 border-pm-cyan p-6 rounded-xl bg-cyan-50/30 hover:bg-cyan-50 transition">
+                    <div class="border-2 border-[var(--pe-gray-light)] p-6 rounded-xl bg-white hover:bg-gray-50 transition">
                         <h3 class="font-bold text-xl mb-3 flex items-center">📱 Application 311</h3>
                         <p class="text-sm text-gray-600 mb-4">Le moyen le plus rapide de signaler (avec photo) : nids-de-poule, graffitis, éclairage brisé.</p>
-                        <a href="https://montreal.ca/en/311-montreal-mobile-app" class="block text-center bg-pm-cyan text-white font-bold py-2 rounded-lg">Télécharger l'app</a>
+                        <a href="https://montreal.ca/en/311-montreal-mobile-app" class="block text-center bg-[var(--pe-orange)] text-white font-bold py-2 rounded-lg">Télécharger l'app</a>
                     </div>
-                    <div class="border-2 border-pm-navy p-6 rounded-xl bg-blue-50/30 hover:bg-blue-50 transition">
+                    <div class="border-2 border-[var(--pe-gray-light)] p-6 rounded-xl bg-white hover:bg-gray-50 transition">
                         <h3 class="font-bold text-xl mb-3 flex items-center">📞 Ligne 311</h3>
                         <p class="text-sm text-gray-600 mb-4">Parlez à un agent 7 jours sur 7 pour toute question sur les services municipaux.</p>
-                        <p class="font-bold text-pm-navy text-center text-lg mt-2">Composez le 311</p>
+                        <p class="font-bold text-[var(--pe-text-main)] text-center text-lg mt-2">Composez le 311</p>
                     </div>
                 </div>
-                <h3 class="font-bold text-xl mb-4 text-pm-navy">Intervenez pour :</h3>
+                <h3 class="font-bold text-xl mb-4 text-[var(--pe-text-main)]">Intervenez pour :</h3>
                 <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 text-gray-700">
-                    <li class="flex items-center"><span class="text-pm-cyan mr-2">✔</span> Ordures non ramassées</li>
-                    <li class="flex items-center"><span class="text-pm-cyan mr-2">✔</span> Trottoirs ou rues endommagés</li>
-                    <li class="flex items-center"><span class="text-pm-cyan mr-2">✔</span> Éclairage de rue défectueux</li>
-                    <li class="flex items-center"><span class="text-pm-cyan mr-2">✔</span> Problèmes de déneigement</li>
-                    <li class="flex items-center"><span class="text-pm-cyan mr-2">✔</span> Mobilier urbain vandalisé</li>
+                    <li class="flex items-center"><span class="text-[var(--pe-orange)] mr-2">✔</span> Ordures non ramassées</li>
+                    <li class="flex items-center"><span class="text-[var(--pe-orange)] mr-2">✔</span> Trottoirs ou rues endommagés</li>
+                    <li class="flex items-center"><span class="text-[var(--pe-orange)] mr-2">✔</span> Éclairage de rue défectueux</li>
+                    <li class="flex items-center"><span class="text-[var(--pe-orange)] mr-2">✔</span> Problèmes de déneigement</li>
+                    <li class="flex items-center"><span class="text-[var(--pe-orange)] mr-2">✔</span> Mobilier urbain vandalisé</li>
                 </ul>
             </div>
         </section>
@@ -111,29 +104,29 @@
         <!-- Contenu : EN -->
         <section id="lang-en" class="lang-section animate-fade-in">
             <div class="bg-white rounded-2xl shadow-xl p-8">
-                <h2 class="text-3xl font-bold mb-4 text-pm-navy">Your Power to Act in Parc-Extension</h2>
+                <h2 class="text-3xl font-bold mb-4 text-[var(--pe-text-main)]">Your Power to Act in Parc-Extension</h2>
                 <p class="text-lg text-gray-600 mb-8 leading-relaxed">
                     Every report is a concrete action for our neighborhood. By using 311, you become the City's eyes. <strong>Your intervention is essential</strong> to keep our living environment clean and safe.
                 </p>
                 <div class="grid md:grid-cols-2 gap-6 mb-10">
-                    <div class="border-2 border-pm-cyan p-6 rounded-xl bg-cyan-50/30">
+                    <div class="border-2 border-[var(--pe-gray-light)] p-6 rounded-xl bg-white">
                         <h3 class="font-bold text-xl mb-3">📱 311 App</h3>
                         <p class="text-sm text-gray-600 mb-4">The fastest way to report (with photo): potholes, graffiti, or broken streetlights.</p>
-                        <a href="https://montreal.ca/en/311-montreal-mobile-app" class="block text-center bg-pm-cyan text-white font-bold py-2 rounded-lg">Download App</a>
+                        <a href="https://montreal.ca/en/311-montreal-mobile-app" class="block text-center bg-[var(--pe-orange)] text-white font-bold py-2 rounded-lg">Download App</a>
                     </div>
-                    <div class="border-2 border-pm-navy p-6 rounded-xl bg-blue-50/30">
+                    <div class="border-2 border-[var(--pe-gray-light)] p-6 rounded-xl bg-white">
                         <h3 class="font-bold text-xl mb-3">📞 Call 311</h3>
                         <p class="text-sm text-gray-600 mb-4">Talk to an agent 7 days a week for any questions about municipal services.</p>
-                        <p class="font-bold text-pm-navy text-center text-lg mt-2">Dial 311</p>
+                        <p class="font-bold text-[var(--pe-text-main)] text-center text-lg mt-2">Dial 311</p>
                     </div>
                 </div>
-                <h3 class="font-bold text-xl mb-4 text-pm-navy">Take Action for:</h3>
+                <h3 class="font-bold text-xl mb-4 text-[var(--pe-text-main)]">Take Action for:</h3>
                 <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 text-gray-700">
-                    <li class="flex items-center"><span class="text-pm-cyan mr-2">✔</span> Missed garbage collection</li>
-                    <li class="flex items-center"><span class="text-pm-cyan mr-2">✔</span> Damaged sidewalks or streets</li>
-                    <li class="flex items-center"><span class="text-pm-cyan mr-2">✔</span> Broken streetlights</li>
-                    <li class="flex items-center"><span class="text-pm-cyan mr-2">✔</span> Snow removal issues</li>
-                    <li class="flex items-center"><span class="text-pm-cyan mr-2">✔</span> Vandalized public property</li>
+                    <li class="flex items-center"><span class="text-[var(--pe-orange)] mr-2">✔</span> Missed garbage collection</li>
+                    <li class="flex items-center"><span class="text-[var(--pe-orange)] mr-2">✔</span> Damaged sidewalks or streets</li>
+                    <li class="flex items-center"><span class="text-[var(--pe-orange)] mr-2">✔</span> Broken streetlights</li>
+                    <li class="flex items-center"><span class="text-[var(--pe-orange)] mr-2">✔</span> Snow removal issues</li>
+                    <li class="flex items-center"><span class="text-[var(--pe-orange)] mr-2">✔</span> Vandalized public property</li>
                 </ul>
             </div>
         </section>
@@ -141,29 +134,29 @@
         <!-- Contenu : ES -->
         <section id="lang-es" class="lang-section animate-fade-in">
             <div class="bg-white rounded-2xl shadow-xl p-8">
-                <h2 class="text-3xl font-bold mb-4 text-pm-navy">Su poder de actuar en Parc-Extension</h2>
+                <h2 class="text-3xl font-bold mb-4 text-[var(--pe-text-main)]">Su poder de actuar en Parc-Extension</h2>
                 <p class="text-lg text-gray-600 mb-8 leading-relaxed">
                     Cada reporte es una acción concreta para nuestro barrio. Al usar el 311, usted se convierte en los ojos de la Ciudad. <strong>Su intervención es esencial</strong> para mantener nuestro entorno limpio y seguro.
                 </p>
                 <div class="grid md:grid-cols-2 gap-6 mb-10">
-                    <div class="border-2 border-pm-cyan p-6 rounded-xl bg-cyan-50/30">
+                    <div class="border-2 border-[var(--pe-gray-light)] p-6 rounded-xl bg-white">
                         <h3 class="font-bold text-xl mb-3">📱 App 311</h3>
                         <p class="text-sm text-gray-600 mb-4">La forma más rápida de reportar (con foto): baches, grafitis o luces fundidas.</p>
-                        <a href="#" class="block text-center bg-pm-cyan text-white font-bold py-2 rounded-lg">Descargar App</a>
+                        <a href="#" class="block text-center bg-[var(--pe-orange)] text-white font-bold py-2 rounded-lg">Descargar App</a>
                     </div>
-                    <div class="border-2 border-pm-navy p-6 rounded-xl bg-blue-50/30">
+                    <div class="border-2 border-[var(--pe-gray-light)] p-6 rounded-xl bg-white">
                         <h3 class="font-bold text-xl mb-3">📞 Llamar al 311</h3>
                         <p class="text-sm text-gray-600 mb-4">Hable con un agente los 7 días de la semana para cualquier duda municipal.</p>
-                        <p class="font-bold text-pm-navy text-center text-lg mt-2">Marque 311</p>
+                        <p class="font-bold text-[var(--pe-text-main)] text-center text-lg mt-2">Marque 311</p>
                     </div>
                 </div>
-                <h3 class="font-bold text-xl mb-4 text-pm-navy">Intervenga para:</h3>
+                <h3 class="font-bold text-xl mb-4 text-[var(--pe-text-main)]">Intervenga para:</h3>
                 <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 text-gray-700">
-                    <li class="flex items-center"><span class="text-pm-cyan mr-2">✔</span> Recolección de basura omitida</li>
-                    <li class="flex items-center"><span class="text-pm-cyan mr-2">✔</span> Aceras o calles dañadas</li>
-                    <li class="flex items-center"><span class="text-pm-cyan mr-2">✔</span> Alumbrado público roto</li>
-                    <li class="flex items-center"><span class="text-pm-cyan mr-2">✔</span> Problemas con la nieve</li>
-                    <li class="flex items-center"><span class="text-pm-cyan mr-2">✔</span> Vandalismo en áreas públicas</li>
+                    <li class="flex items-center"><span class="text-[var(--pe-orange)] mr-2">✔</span> Recolección de basura omitida</li>
+                    <li class="flex items-center"><span class="text-[var(--pe-orange)] mr-2">✔</span> Aceras o calles dañadas</li>
+                    <li class="flex items-center"><span class="text-[var(--pe-orange)] mr-2">✔</span> Alumbrado público roto</li>
+                    <li class="flex items-center"><span class="text-[var(--pe-orange)] mr-2">✔</span> Problemas con la nieve</li>
+                    <li class="flex items-center"><span class="text-[var(--pe-orange)] mr-2">✔</span> Vandalismo en áreas públicas</li>
                 </ul>
             </div>
         </section>
@@ -171,29 +164,29 @@
         <!-- Contenu : GR -->
         <section id="lang-gr" class="lang-section animate-fade-in">
             <div class="bg-white rounded-2xl shadow-xl p-8">
-                <h2 class="text-3xl font-bold mb-4 text-pm-navy">Η δύναμή σας να δράσετε στο Parc-Extension</h2>
+                <h2 class="text-3xl font-bold mb-4 text-[var(--pe-text-main)]">Η δύναμή σας να δράσετε στο Parc-Extension</h2>
                 <p class="text-lg text-gray-600 mb-8 leading-relaxed">
                     Κάθε αναφορά είναι μια συγκεκριμένη ενέργεια για τη γειτονιά μας. Χρησιμοποιώντας το 311, γίνεστε τα μάτια της πόλης. <strong>Η παρέμβασή σας είναι απαραίτητη</strong> για να διατηρήσουμε το περιβάλλον μας καθαρό και ασφαλές.
                 </p>
                 <div class="grid md:grid-cols-2 gap-6 mb-10">
-                    <div class="border-2 border-pm-cyan p-6 rounded-xl bg-cyan-50/30">
+                    <div class="border-2 border-[var(--pe-gray-light)] p-6 rounded-xl bg-white">
                         <h3 class="font-bold text-xl mb-3">📱 Εφαρμογή 311</h3>
                         <p class="text-sm text-gray-600 mb-4">Ο ταχύτερος τρόπος αναφοράς (με φωτογραφία): λακκούβες, γκράφιτι, σπασμένα φώτα.</p>
-                        <a href="#" class="block text-center bg-pm-cyan text-white font-bold py-2 rounded-lg">Λήψη Εφαρμογής</a>
+                        <a href="#" class="block text-center bg-[var(--pe-orange)] text-white font-bold py-2 rounded-lg">Λήψη Εφαρμογής</a>
                     </div>
-                    <div class="border-2 border-pm-navy p-6 rounded-xl bg-blue-50/30">
+                    <div class="border-2 border-[var(--pe-gray-light)] p-6 rounded-xl bg-white">
                         <h3 class="font-bold text-xl mb-3">📞 Καλέστε 311</h3>
                         <p class="text-sm text-gray-600 mb-4">Μιλήστε με εκπρόσωπο 7 ημέρες την εβδομάδα για οποιαδήποτε δημοτική υπηρεσία.</p>
-                        <p class="font-bold text-pm-navy text-center text-lg mt-2">Καλέστε το 311</p>
+                        <p class="font-bold text-[var(--pe-text-main)] text-center text-lg mt-2">Καλέστε το 311</p>
                     </div>
                 </div>
-                <h3 class="font-bold text-xl mb-4 text-pm-navy">Δράστε για:</h3>
+                <h3 class="font-bold text-xl mb-4 text-[var(--pe-text-main)]">Δράστε για:</h3>
                 <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 text-gray-700">
-                    <li class="flex items-center"><span class="text-pm-cyan mr-2">✔</span> Μη περισυλλογή σκουπιδιών</li>
-                    <li class="flex items-center"><span class="text-pm-cyan mr-2">✔</span> Κατεστραμμένα πεζοδρόμια</li>
-                    <li class="flex items-center"><span class="text-pm-cyan mr-2">✔</span> Προβλήματα φωτισμού</li>
-                    <li class="flex items-center"><span class="text-pm-cyan mr-2">✔</span> Θέματα αποχιονισμού</li>
-                    <li class="flex items-center"><span class="text-pm-cyan mr-2">✔</span> Βανδαλισμούς</li>
+                    <li class="flex items-center"><span class="text-[var(--pe-orange)] mr-2">✔</span> Μη περισυλλογή σκουπιδιών</li>
+                    <li class="flex items-center"><span class="text-[var(--pe-orange)] mr-2">✔</span> Κατεστραμμένα πεζοδρόμια</li>
+                    <li class="flex items-center"><span class="text-[var(--pe-orange)] mr-2">✔</span> Προβλήματα φωτισμού</li>
+                    <li class="flex items-center"><span class="text-[var(--pe-orange)] mr-2">✔</span> Θέματα αποχιονισμού</li>
+                    <li class="flex items-center"><span class="text-[var(--pe-orange)] mr-2">✔</span> Βανδαλισμούς</li>
                 </ul>
             </div>
         </section>
@@ -201,20 +194,20 @@
         <!-- Contenu : PA -->
         <section id="lang-pa" class="lang-section animate-fade-in">
             <div class="bg-white rounded-2xl shadow-xl p-8">
-                <h2 class="text-3xl font-bold mb-4 text-pm-navy">ਪਾਰਕ-ਐਕਸਟੈਂਸ਼ਨ ਵਿੱਚ ਕਾਰਵਾਈ ਕਰਨ ਦੀ ਤੁਹਾਡੀ ਸ਼ਕਤੀ</h2>
+                <h2 class="text-3xl font-bold mb-4 text-[var(--pe-text-main)]">ਪਾਰਕ-ਐਕਸਟੈਂਸ਼ਨ ਵਿੱਚ ਕਾਰਵਾਈ ਕਰਨ ਦੀ ਤੁਹਾਡੀ ਸ਼ਕਤੀ</h2>
                 <p class="text-lg text-gray-600 mb-8 leading-relaxed">
                     ਹਰ ਰਿਪੋਰਟ ਸਾਡੇ ਇਲਾਕੇ ਲਈ ਇਕ ਠੋਸ ਕਦਮ ਹੈ। 311 ਦੀ ਵਰਤੋਂ ਕਰਕੇ, ਤੁਸੀਂ ਸ਼ਹਿਰ ਦੀਆਂ ਅੱਖਾਂ ਬਣ ਜਾਂਦੇ ਹੋ। <strong>ਤੁਹਾਡਾ ਦਖਲ ਸਾਡੇ ਰਹਿਣ ਦੇ ਵਾਤਾਵਰਣ ਨੂੰ ਸਾਫ਼ ਅਤੇ ਸੁਰੱਖਿਅਤ ਰੱਖਣ ਲਈ ਜ਼ਰੂਰੀ ਹੈ।</strong>
                 </p>
                 <div class="grid md:grid-cols-2 gap-6 mb-10">
-                    <div class="border-2 border-pm-cyan p-6 rounded-xl bg-cyan-50/30">
+                    <div class="border-2 border-[var(--pe-gray-light)] p-6 rounded-xl bg-white">
                         <h3 class="font-bold text-xl mb-3">📱 311 ਐਪ</h3>
                         <p class="text-sm text-gray-600 mb-4">ਰਿਪੋਰਟ ਕਰਨ ਦਾ ਸਭ ਤੋਂ ਤੇਜ਼ ਤਰੀਕਾ (ਫੋਟੋ ਨਾਲ): ਟੋਏ, ਗ੍ਰੈਫਿਟੀ, ਜਾਂ ਟੁੱਟੀਆਂ ਲਾਈਟਾਂ।</p>
-                        <a href="#" class="block text-center bg-pm-cyan text-white font-bold py-2 rounded-lg">ਐਪ ਡਾਊਨਲੋਡ ਕਰੋ</a>
+                        <a href="#" class="block text-center bg-[var(--pe-orange)] text-white font-bold py-2 rounded-lg">ਐਪ ਡਾਊਨਲੋਡ ਕਰੋ</a>
                     </div>
-                    <div class="border-2 border-pm-navy p-6 rounded-xl bg-blue-50/30">
+                    <div class="border-2 border-[var(--pe-gray-light)] p-6 rounded-xl bg-white">
                         <h3 class="font-bold text-xl mb-3">📞 311 'ਤੇ ਕਾਲ ਕਰੋ</h3>
                         <p class="text-sm text-gray-600 mb-4">ਨਗਰ ਨਿਗਮ ਸੇਵਾਵਾਂ ਬਾਰੇ ਕਿਸੇ ਵੀ ਸਵਾਲ ਲਈ ਹਫ਼ਤੇ ਦੇ 7 ਦਿਨ ਗੱਲ ਕਰੋ।</p>
-                        <p class="font-bold text-pm-navy text-center text-lg mt-2">311 ਡਾਇਲ ਕਰੋ</p>
+                        <p class="font-bold text-[var(--pe-text-main)] text-center text-lg mt-2">311 ਡਾਇਲ ਕਰੋ</p>
                     </div>
                 </div>
             </div>
@@ -223,20 +216,20 @@
         <!-- Contenu : BN -->
         <section id="lang-bn" class="lang-section animate-fade-in">
             <div class="bg-white rounded-2xl shadow-xl p-8">
-                <h2 class="text-2xl font-bold mb-4 text-pm-navy text-right">পার্ক-এক্সটেনশনে কাজ করার আপনার ক্ষমতা</h2>
+                <h2 class="text-2xl font-bold mb-4 text-[var(--pe-text-main)] text-right">পার্ক-এক্সটেনশনে কাজ করার আপনার ক্ষমতা</h2>
                 <p class="text-lg text-gray-600 mb-8 leading-relaxed">
                     প্রতিটি রিপোর্ট আমাদের এলাকার জন্য একটি বাস্তব পদক্ষেপ। ৩১১ ব্যবহার করে, আপনি শহরের চোখ হয়ে উঠছেন। <strong>আমাদের পরিবেশ পরিষ্কার এবং নিরাপদ রাখতে আপনার হস্তক্ষেপ অপরিহার্য।</strong>
                 </p>
                 <div class="grid md:grid-cols-2 gap-6 mb-10">
-                    <div class="border-2 border-pm-cyan p-6 rounded-xl bg-cyan-50/30">
+                    <div class="border-2 border-[var(--pe-gray-light)] p-6 rounded-xl bg-white">
                         <h3 class="font-bold text-xl mb-3">📱 ৩১১ অ্যাপ</h3>
                         <p class="text-sm text-gray-600 mb-4">রিপোর্ট করার দ্রুততম উপায়: রাস্তার গর্ত, গ্রাফিতি বা রাস্তার আলো নষ্ট হওয়া।</p>
-                        <a href="#" class="block text-center bg-pm-cyan text-white font-bold py-2 rounded-lg">অ্যাপ ডাউনলোড করুন</a>
+                        <a href="#" class="block text-center bg-[var(--pe-orange)] text-white font-bold py-2 rounded-lg">অ্যাপ ডাউনলোড করুন</a>
                     </div>
-                    <div class="border-2 border-pm-navy p-6 rounded-xl bg-blue-50/30">
+                    <div class="border-2 border-[var(--pe-gray-light)] p-6 rounded-xl bg-white">
                         <h3 class="font-bold text-xl mb-3">📞 ৩১১ এ কল করুন</h3>
                         <p class="text-sm text-gray-600 mb-4">পৌরসভা সংক্রান্ত যেকোনো প্রশ্নের জন্য সপ্তাহে ৭ দিন কথা বলুন।</p>
-                        <p class="font-bold text-pm-navy text-center text-lg mt-2">৩১১ ডায়াল করুন</p>
+                        <p class="font-bold text-[var(--pe-text-main)] text-center text-lg mt-2">৩১১ ডায়াল করুন</p>
                     </div>
                 </div>
             </div>
@@ -245,20 +238,20 @@
         <!-- Contenu : UR -->
         <section id="lang-ur" class="lang-section animate-fade-in text-right" dir="rtl">
             <div class="bg-white rounded-2xl shadow-xl p-8">
-                <h2 class="text-3xl font-bold mb-4 text-pm-navy">پارک ایکسٹینشن میں آپ کے عمل کی طاقت</h2>
+                <h2 class="text-3xl font-bold mb-4 text-[var(--pe-text-main)]">پارک ایکسٹینشن میں آپ کے عمل کی طاقت</h2>
                 <p class="text-lg text-gray-600 mb-8 leading-relaxed">
                     ہر رپورٹ ہمارے پڑوس کے لیے ایک ٹھوس عمل ہے۔ 311 کا استعمال کرکے، آپ شہر کی آنکھیں بن جاتے ہیں۔ اپنے ماحول کو صاف ستھرا اور محفوظ رکھنے کے لیے <strong>آپ کی مداخلت ضروری ہے</strong>۔
                 </p>
                 <div class="grid md:grid-cols-2 gap-6 mb-10">
-                    <div class="border-2 border-pm-cyan p-6 rounded-xl bg-cyan-50/30 text-right">
+                    <div class="border-2 border-[var(--pe-gray-light)] p-6 rounded-xl bg-white text-right">
                         <h3 class="font-bold text-xl mb-3">📱 311 ایپ</h3>
                         <p class="text-sm text-gray-600 mb-4">رپورٹ کرنے کا تیز ترین طریقہ: سڑک کے گڑھے، دیواروں پر لکھائی، یا بجلی کے کھمبے کی خرابی۔</p>
-                        <a href="#" class="block text-center bg-pm-cyan text-white font-bold py-2 rounded-lg">ایپ ڈاؤن لوڈ کریں</a>
+                        <a href="#" class="block text-center bg-[var(--pe-orange)] text-white font-bold py-2 rounded-lg">ایپ ڈاؤن لوڈ کریں</a>
                     </div>
-                    <div class="border-2 border-pm-navy p-6 rounded-xl bg-blue-50/30 text-right">
+                    <div class="border-2 border-[var(--pe-gray-light)] p-6 rounded-xl bg-white text-right">
                         <h3 class="font-bold text-xl mb-3">📞 311 پر کال کریں</h3>
                         <p class="text-sm text-gray-600 mb-4">بلدیاتی خدمات کے بارے में کسی بھی سوال کے لیے ہفتے کے 7 دن ایجنٹ سے بات کریں۔</p>
-                        <p class="font-bold text-pm-navy text-center text-lg mt-2">311 ڈائل کریں</p>
+                        <p class="font-bold text-[var(--pe-text-main)] text-center text-lg mt-2">311 ڈائل کریں</p>
                     </div>
                 </div>
             </div>
@@ -267,41 +260,62 @@
         <!-- Contenu : HI -->
         <section id="lang-hi" class="lang-section animate-fade-in">
             <div class="bg-white rounded-2xl shadow-xl p-8">
-                <h2 class="text-3xl font-bold mb-4 text-pm-navy">पार्क-एक्सटेंशन में कार्रवाई करने की आपकी शक्ति</h2>
+                <h2 class="text-3xl font-bold mb-4 text-[var(--pe-text-main)]">पार्क-एक्सटेंशन में कार्रवाई करने की आपकी शक्ति</h2>
                 <p class="text-lg text-gray-600 mb-8 leading-relaxed">
                     प्रत्येक रिपोर्ट हमारे पड़ोस के लिए एक ठोस कार्रवाई है। 311 का उपयोग करके, आप शहर की आँखें बन जाते हैं। <strong>हमारे परिवेश को स्वच्छ और सुरक्षित रखने के लिए आपका हस्तक्षेप अनिवार्य है।</strong>
                 </p>
                 <div class="grid md:grid-cols-2 gap-6 mb-10">
-                    <div class="border-2 border-pm-cyan p-6 rounded-xl bg-cyan-50/30">
+                    <div class="border-2 border-[var(--pe-gray-light)] p-6 rounded-xl bg-white">
                         <h3 class="font-bold text-xl mb-3">📱 311 ऐप</h3>
                         <p class="text-sm text-gray-600 mb-4">शिकायत करने का सबसे तेज़ तरीका: गड्ढे, ग्राफिटी या खराब स्ट्रीटलाइट।</p>
-                        <a href="#" class="block text-center bg-pm-cyan text-white font-bold py-2 rounded-lg">ऐप डाउनलोड करें</a>
+                        <a href="#" class="block text-center bg-[var(--pe-orange)] text-white font-bold py-2 rounded-lg">ऐप डाउनलोड करें</a>
                     </div>
-                    <div class="border-2 border-pm-navy p-6 rounded-xl bg-blue-50/30">
+                    <div class="border-2 border-[var(--pe-gray-light)] p-6 rounded-xl bg-white">
                         <h3 class="font-bold text-xl mb-3">📞 311 पर कॉल करें</h3>
                         <p class="text-sm text-gray-600 mb-4">नगरपालिका सेवाओं के बारे में किसी भी प्रश्न के लिए सप्ताह के 7 दिन बात करें।</p>
-                        <p class="font-bold text-pm-navy text-center text-lg mt-2">311 डायल करें</p>
+                        <p class="font-bold text-[var(--pe-text-main)] text-center text-lg mt-2">311 डायल करें</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Pied de page d'action -->
-        <div class="mt-12 text-center bg-pm-navy text-white p-10 rounded-3xl shadow-2xl relative overflow-hidden">
-            <div class="absolute top-0 right-0 w-32 h-32 bg-pm-cyan opacity-10 rounded-full -mr-16 -mt-16"></div>
-            <h3 class="text-2xl font-bold mb-4 relative z-10">Besoin d'aide supplémentaire ?</h3>
+        <div class="mt-12 text-center bg-[var(--pe-gray-footer)] text-[var(--pe-text-main)] p-10 rounded-3xl shadow-lg relative overflow-hidden">
+                        <h3 class="text-2xl font-bold mb-4 relative z-10">Besoin d'aide supplémentaire ?</h3>
             <p class="mb-8 opacity-90 max-w-lg mx-auto relative z-10">Mon bureau est là pour s'assurer que vos signalements sont suivis d'effets. Ensemble, bâtissons un Parc-Extension à notre image.</p>
             <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4 relative z-10">
-                <a href="mailto:elvira.carhuallanqui@montreal.ca" class="w-full sm:w-auto bg-pm-cyan hover:bg-white hover:text-pm-navy text-white font-bold py-4 px-10 rounded-full transition transform hover:scale-105 shadow-lg">Écrire à Elvira</a>
-                <a href="https://projetmontreal.org/equipe/elvira-carhuallanqui" target="_blank" class="w-full sm:w-auto border-2 border-white hover:bg-white hover:text-pm-navy text-white font-bold py-4 px-10 rounded-full transition shadow-lg">Profil officiel</a>
+                <a href="mailto:elvira.carhuallanqui@montreal.ca" class="w-full sm:w-auto border-2 border-[var(--pe-orange)] text-[var(--pe-orange)] hover:bg-[var(--pe-orange)] hover:text-white font-bold py-4 px-10 rounded-full transition shadow-lg">Écrire à Elvira</a>
+                <a href="https://projetmontreal.org/equipe/elvira-carhuallanqui" target="_blank" class="w-full sm:w-auto border-2 border-[var(--pe-orange)] text-[var(--pe-orange)] hover:bg-[var(--pe-orange)] hover:text-white font-bold py-4 px-10 rounded-full transition shadow-lg">Profil officiel</a>
             </div>
         </div>
 
     </main>
 
-    <footer class="bg-gray-100 py-10 mt-12 border-t text-center text-sm text-gray-500">
+    <footer class="bg-[var(--pe-gray-footer)] py-10 mt-12 border-t text-center text-sm text-[var(--pe-gray-text)]">
         <div class="container mx-auto px-4">
-            <p class="font-bold text-pm-navy mb-1 uppercase tracking-widest text-white">Projet Montréal • District de Parc-Extension</p>
+        <div class="mb-6 space-y-4 text-[var(--pe-gray-text)] inline-block text-left">
+            <p class="flex items-center justify-center sm:justify-start">
+                <span class="mr-2 text-xl">🏛️</span>
+                <a href="https://montreal.ca/elus/elvira-carhuallanqui-100804" class="underline hover:text-[var(--pe-orange)]" target="_blank">Profil Ville de Montréal</a>
+            </p>
+            <p class="flex items-start justify-center sm:justify-start">
+                <span class="mr-2 text-xl mt-1">📍</span>
+                <span>
+                    Mairie d'arrondissement de Villeray–Saint-Michel–Parc-Extension<br>
+                    405, avenue Ogilvy<br>
+                    Montréal (Québec) H3N 1M3
+                </span>
+            </p>
+            <p class="flex items-center justify-center sm:justify-start">
+                <span class="mr-2 text-xl">✉️</span>
+                <a href="mailto:elvira.carhuallanqui@montreal.ca" class="underline hover:text-[var(--pe-orange)]">elvira.carhuallanqui@montreal.ca</a>
+            </p>
+            <p class="flex items-center justify-center sm:justify-start">
+                <span class="mr-2 text-xl">📸</span>
+                <span>Instagram : <a href="https://www.instagram.com/elvirac.ca" class="underline hover:text-[var(--pe-orange)]" target="_blank">@elvirac.ca</a></span>
+            </p>
+        </div>
+            <p class="font-bold text-[var(--pe-gray-text)] mb-1 uppercase tracking-widest">Projet Montréal • District de Parc-Extension</p>
             <p>© 2025 Bureau de la conseillère Elvira Carhuallanqui</p>
         </div>
     </footer>
@@ -335,12 +349,49 @@
             }
         }
 
-        // Détection automatique de la langue via le Hash au chargement
+        // Détection automatique de la langue via le Hash ou le navigateur
         window.addEventListener('load', () => {
             const hash = window.location.hash.replace('#', '');
             const validLangs = ['fr', 'en', 'es', 'gr', 'pa', 'bn', 'ur', 'hi'];
+
+            // Map ISO codes to internal app codes where necessary
+            const langMap = {
+                'el': 'gr', // Greek
+                'hi': 'hi', // Hindi
+                'ur': 'ur', // Urdu
+                'bn': 'bn', // Bengali
+                'pa': 'pa', // Punjabi
+                'es': 'es', // Spanish
+                'en': 'en', // English
+                'fr': 'fr'  // French
+            };
+
             if (hash && validLangs.includes(hash)) {
+                // Le hash a la priorité
                 switchLang(hash, false);
+            } else {
+                // Auto-détection via le navigateur
+                let detectedLang = 'fr'; // Fallback par défaut
+
+                if (navigator.languages && navigator.languages.length) {
+                    for (let i = 0; i < navigator.languages.length; i++) {
+                        const browserLangCode = navigator.languages[i].split('-')[0].toLowerCase();
+                        const mappedCode = langMap[browserLangCode];
+                        if (mappedCode && validLangs.includes(mappedCode)) {
+                            detectedLang = mappedCode;
+                            break;
+                        }
+                    }
+                } else if (navigator.language) {
+                    const browserLangCode = navigator.language.split('-')[0].toLowerCase();
+                    const mappedCode = langMap[browserLangCode];
+                    if (mappedCode && validLangs.includes(mappedCode)) {
+                        detectedLang = mappedCode;
+                    }
+                }
+
+                switchLang(detectedLang, false);
+                history.replaceState(null, null, '#' + detectedLang);
             }
         });
 
