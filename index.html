@@ -356,7 +356,8 @@
 
             // Map ISO codes to internal app codes where necessary
             const langMap = {
-                'el': 'gr', // Greek
+                'el': 'gr', // Greek (ISO 639-1 is 'el')
+                'gr': 'gr', // Just in case
                 'hi': 'hi', // Hindi
                 'ur': 'ur', // Urdu
                 'bn': 'bn', // Bengali
@@ -366,29 +367,43 @@
                 'fr': 'fr'  // French
             };
 
+            console.log('--- Language Detection ---');
+            console.log('navigator.languages:', navigator.languages);
+            console.log('navigator.language:', navigator.language);
+
             if (hash && validLangs.includes(hash)) {
                 // Le hash a la priorité
+                console.log('Hash URL priority, selected:', hash);
                 switchLang(hash, false);
             } else {
                 // Auto-détection via le navigateur
                 let detectedLang = 'fr'; // Fallback par défaut
+                let usedBrowserCode = 'none';
 
                 if (navigator.languages && navigator.languages.length) {
                     for (let i = 0; i < navigator.languages.length; i++) {
                         const browserLangCode = navigator.languages[i].split('-')[0].toLowerCase();
                         const mappedCode = langMap[browserLangCode];
+                        console.log(`Checking navigator.languages[${i}]: '${navigator.languages[i]}' -> prefix '${browserLangCode}' -> mapped to '${mappedCode}'`);
                         if (mappedCode && validLangs.includes(mappedCode)) {
                             detectedLang = mappedCode;
+                            usedBrowserCode = navigator.languages[i];
                             break;
                         }
                     }
                 } else if (navigator.language) {
                     const browserLangCode = navigator.language.split('-')[0].toLowerCase();
                     const mappedCode = langMap[browserLangCode];
+                    console.log(`Checking navigator.language: '${navigator.language}' -> prefix '${browserLangCode}' -> mapped to '${mappedCode}'`);
                     if (mappedCode && validLangs.includes(mappedCode)) {
                         detectedLang = mappedCode;
+                        usedBrowserCode = navigator.language;
                     }
                 }
+
+                console.log('Fallback default: fr');
+                console.log('Final detected language selected:', detectedLang, '(from browser code:', usedBrowserCode + ')');
+                console.log('--------------------------');
 
                 switchLang(detectedLang, false);
                 history.replaceState(null, null, '#' + detectedLang);
