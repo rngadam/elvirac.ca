@@ -349,12 +349,49 @@
             }
         }
 
-        // Détection automatique de la langue via le Hash au chargement
+        // Détection automatique de la langue via le Hash ou le navigateur
         window.addEventListener('load', () => {
             const hash = window.location.hash.replace('#', '');
             const validLangs = ['fr', 'en', 'es', 'gr', 'pa', 'bn', 'ur', 'hi'];
+
+            // Map ISO codes to internal app codes where necessary
+            const langMap = {
+                'el': 'gr', // Greek
+                'hi': 'hi', // Hindi
+                'ur': 'ur', // Urdu
+                'bn': 'bn', // Bengali
+                'pa': 'pa', // Punjabi
+                'es': 'es', // Spanish
+                'en': 'en', // English
+                'fr': 'fr'  // French
+            };
+
             if (hash && validLangs.includes(hash)) {
+                // Le hash a la priorité
                 switchLang(hash, false);
+            } else {
+                // Auto-détection via le navigateur
+                let detectedLang = 'fr'; // Fallback par défaut
+
+                if (navigator.languages && navigator.languages.length) {
+                    for (let i = 0; i < navigator.languages.length; i++) {
+                        const browserLangCode = navigator.languages[i].split('-')[0].toLowerCase();
+                        const mappedCode = langMap[browserLangCode];
+                        if (mappedCode && validLangs.includes(mappedCode)) {
+                            detectedLang = mappedCode;
+                            break;
+                        }
+                    }
+                } else if (navigator.language) {
+                    const browserLangCode = navigator.language.split('-')[0].toLowerCase();
+                    const mappedCode = langMap[browserLangCode];
+                    if (mappedCode && validLangs.includes(mappedCode)) {
+                        detectedLang = mappedCode;
+                    }
+                }
+
+                switchLang(detectedLang, false);
+                history.replaceState(null, null, '#' + detectedLang);
             }
         });
 
