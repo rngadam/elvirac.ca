@@ -6,7 +6,7 @@ on:
     branches: [ main, master ]
 jobs:
   test:
-    timeout-minutes: 60
+    timeout-minutes: 10
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
@@ -20,46 +20,9 @@ jobs:
     - name: Run Playwright tests
       run: npx playwright test
 
-    # User requested: "automate keep copies of visual inspections screenshots prefixed with YYYY-mm-dd in screenshots/ for this set of changes and all future changes."
-    # Let's run a script that captures a full page screenshot using Playwright after tests.
+    # Run the updated fail-fast screenshot capture script
     - name: Capture visual inspection screenshots
       run: |
-        cat << 'SCR' > capture.js
-        const { chromium } = require('playwright');
-        const fs = require('fs');
-        const path = require('path');
-        const { execSync } = require('child_process');
-
-        (async () => {
-          const browser = await chromium.launch();
-          const page = await browser.newPage();
-
-          // Start static server in background for capturing if not already running
-          // Actually, we can just load the file directly for static screenshots since playwright handles file:// URLs nicely if we do it right, but since it's an action, we can use http-server.
-          const server = require('child_process').spawn('npx', ['http-server', '.', '-p', '8080']);
-          await new Promise(resolve => setTimeout(resolve, 2000));
-
-          await page.goto('http://localhost:8080/index.html');
-
-          const dir = './screenshots';
-          if (!fs.existsSync(dir)){
-            fs.mkdirSync(dir);
-          }
-
-          const prefix = new Date().toISOString().split('T')[0] + '_';
-          const langs = ['fr', 'en', 'es', 'gr', 'pa', 'bn', 'ur', 'hi'];
-
-          for (const lang of langs) {
-             if (lang !== 'fr') await page.evaluate(`switchLang('${lang}')`);
-             else await page.evaluate(`switchLang('fr')`);
-             await page.waitForTimeout(500); // wait for animation
-             await page.screenshot({ path: path.join(dir, prefix + lang + '_verification.png') });
-          }
-
-          await browser.close();
-          server.kill();
-        })();
-        SCR
         npm install playwright
         node capture.js
 
