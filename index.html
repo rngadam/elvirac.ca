@@ -10,8 +10,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         :root {
-            --pe-text-main: #333333;
-            --pe-orange: #ff7400;
+            --pe-text-main: #FFFFFF;
+            --pe-orange: #F0C044;
             --pe-gray-light: #EEEEEE;
             --pe-gray-footer: #F5F5F5;
             --pe-gray-text: #595959;
@@ -54,15 +54,15 @@
         }
     </style>
 </head>
-<body class="bg-white">
+<body class="bg-[#3A8E40]">
 
     <!-- En-tête -->
-    <header class="bg-white py-6 shadow-md border-b border-[var(--pe-gray-light)]">
+    <header class="bg-[#3A8E40] py-6 shadow-md border-b border-[var(--pe-gray-light)]">
         <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
             <div class="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4 mb-4 md:mb-0">
                 <img src="logo.webp" alt="Elvira Carhuallanqui" class="w-20 h-20 rounded-full object-cover border border-[var(--pe-gray-light)] shadow-sm">
                 <div>
-                    <h1 class="text-2xl font-bold leading-tight text-[var(--pe-text-main)]">Elvira Carhuallanqui</h1>
+                    <h1 class="text-2xl font-bold leading-tight text-[var(--pe-orange)]">Elvira Carhuallanqui</h1>
                     <p class="text-[var(--pe-text-main)] font-medium">Conseillère de la ville • Parc-Extension</p>
                 </div>
             </div>
@@ -73,7 +73,7 @@
     </header>
 
     <!-- Sélecteur de langue -->
-    <nav class="bg-white border-b sticky top-[40px] z-50 overflow-x-auto shadow-sm">
+    <nav class="bg-[#3A8E40] border-b sticky top-[40px] z-50 overflow-x-auto shadow-sm">
         <div class="container mx-auto px-4 flex space-x-6 min-w-max">
             <button onclick="switchLang('fr')" class="nav-tab py-4 px-2 whitespace-nowrap active" id="btn-fr">Français</button>
             <button onclick="switchLang('en')" class="nav-tab py-4 px-2 whitespace-nowrap" id="btn-en">English</button>
@@ -90,25 +90,25 @@
         
         <!-- Contenu : FR -->
         <section id="lang-fr" class="lang-section active animate-fade-in">
-            <div class="bg-white rounded-2xl shadow-xl p-8">
-                <h2 class="text-3xl font-bold mb-4 text-[var(--pe-text-main)]">Votre pouvoir d'agir sur Parc-Extension</h2>
-                <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+            <div class="bg-[#3A8E40] rounded-2xl shadow-xl p-8">
+                <h2 class="text-3xl font-bold mb-4 text-[var(--pe-orange)]">Votre pouvoir d'agir sur Parc-Extension</h2>
+                <p class="text-lg text-[var(--pe-text-main)] mb-8 leading-relaxed">
                     Chaque signalement est une action concrète pour notre quartier. En utilisant le <span class="highlight-311">311</span>, vous devenez les yeux de la Ville. <strong>Votre intervention est essentielle</strong> pour maintenir notre milieu de vie propre et sécuritaire.
                 </p>
                 <div class="grid md:grid-cols-2 gap-6 mb-10">
-                    <div class="border-2 border-[var(--pe-gray-light)] p-6 rounded-xl bg-white hover:bg-gray-50 transition">
+                    <div class="border-2 border-[var(--pe-gray-light)] p-6 rounded-xl bg-[#3A8E40] hover:bg-[#327a37] transition">
                         <h3 class="font-bold text-xl mb-3 flex items-center">📱 Application&nbsp;<span class="highlight-311">311</span></h3>
-                        <p class="text-sm text-gray-600 mb-4">Le moyen le plus rapide de signaler (avec photo) : nids-de-poule, graffitis, éclairage brisé.</p>
+                        <p class="text-sm text-[var(--pe-text-main)] mb-4">Le moyen le plus rapide de signaler (avec photo) : nids-de-poule, graffitis, éclairage brisé.</p>
                         <a href="https://montreal.ca/en/311-montreal-mobile-app" class="block text-center bg-[var(--pe-orange)] text-white font-bold py-2 rounded-lg">Télécharger l'app</a>
                     </div>
-                    <div class="border-2 border-[var(--pe-gray-light)] p-6 rounded-xl bg-white hover:bg-gray-50 transition">
+                    <div class="border-2 border-[var(--pe-gray-light)] p-6 rounded-xl bg-[#3A8E40] hover:bg-[#327a37] transition">
                         <h3 class="font-bold text-xl mb-3 flex items-center">📞 Ligne&nbsp;<span class="highlight-311">311</span></h3>
-                        <p class="text-sm text-gray-600 mb-4">Parlez à un agent 7 jours sur 7 pour toute question sur les services municipaux.</p>
+                        <p class="text-sm text-[var(--pe-text-main)] mb-4">Parlez à un agent 7 jours sur 7 pour toute question sur les services municipaux.</p>
                         <p class="font-bold text-[var(--pe-text-main)] text-center text-lg mt-2">Composez le <span class="highlight-311">311</span></p>
                     </div>
                 </div>
-                <h3 class="font-bold text-xl mb-4 text-[var(--pe-text-main)]">Intervenez pour :</h3>
-                <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 text-gray-700">
+                <h3 class="font-bold text-xl mb-4 text-[var(--pe-orange)]">Intervenez pour :</h3>
+                <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 text-[var(--pe-text-main)]">
                     <li class="flex items-center"><span class="text-[var(--pe-orange)] mr-2">🗑️</span> Ordures non ramassées</li>
                     <li class="flex items-center"><span class="text-[var(--pe-orange)] mr-2">🚧</span> Trottoirs ou rues endommagés</li>
                     <li class="flex items-center"><span class="text-[var(--pe-orange)] mr-2">💡</span> Éclairage de rue défectueux</li>
@@ -120,25 +120,25 @@
 
         <!-- Contenu : EN -->
         <section id="lang-en" class="lang-section animate-fade-in">
-            <div class="bg-white rounded-2xl shadow-xl p-8">
-                <h2 class="text-3xl font-bold mb-4 text-[var(--pe-text-main)]">Your Power to Act in Parc-Extension</h2>
-                <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+            <div class="bg-[#3A8E40] rounded-2xl shadow-xl p-8">
+                <h2 class="text-3xl font-bold mb-4 text-[var(--pe-orange)]">Your Power to Act in Parc-Extension</h2>
+                <p class="text-lg text-[var(--pe-text-main)] mb-8 leading-relaxed">
                     Every report is a concrete action for our neighborhood. By using <span class="highlight-311">311</span>, you become the City's eyes. <strong>Your intervention is essential</strong> to keep our living environment clean and safe.
                 </p>
                 <div class="grid md:grid-cols-2 gap-6 mb-10">
-                    <div class="border-2 border-[var(--pe-gray-light)] p-6 rounded-xl bg-white">
+                    <div class="border-2 border-[var(--pe-gray-light)] p-6 rounded-xl bg-[#3A8E40]">
                         <h3 class="font-bold text-xl mb-3 flex items-center">📱 <span class="highlight-311">311</span> App</h3>
-                        <p class="text-sm text-gray-600 mb-4">The fastest way to report (with photo): potholes, graffiti, or broken streetlights.</p>
+                        <p class="text-sm text-[var(--pe-text-main)] mb-4">The fastest way to report (with photo): potholes, graffiti, or broken streetlights.</p>
                         <a href="https://montreal.ca/en/311-montreal-mobile-app" class="block text-center bg-[var(--pe-orange)] text-white font-bold py-2 rounded-lg">Download App</a>
                     </div>
-                    <div class="border-2 border-[var(--pe-gray-light)] p-6 rounded-xl bg-white">
+                    <div class="border-2 border-[var(--pe-gray-light)] p-6 rounded-xl bg-[#3A8E40]">
                         <h3 class="font-bold text-xl mb-3 flex items-center">📞 Call <span class="highlight-311">311</span></h3>
-                        <p class="text-sm text-gray-600 mb-4">Talk to an agent 7 days a week for any questions about municipal services.</p>
+                        <p class="text-sm text-[var(--pe-text-main)] mb-4">Talk to an agent 7 days a week for any questions about municipal services.</p>
                         <p class="font-bold text-[var(--pe-text-main)] text-center text-lg mt-2">Dial <span class="highlight-311">311</span></p>
                     </div>
                 </div>
-                <h3 class="font-bold text-xl mb-4 text-[var(--pe-text-main)]">Take Action for:</h3>
-                <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 text-gray-700">
+                <h3 class="font-bold text-xl mb-4 text-[var(--pe-orange)]">Take Action for:</h3>
+                <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 text-[var(--pe-text-main)]">
                     <li class="flex items-center"><span class="text-[var(--pe-orange)] mr-2">🗑️</span> Missed garbage collection</li>
                     <li class="flex items-center"><span class="text-[var(--pe-orange)] mr-2">🚧</span> Damaged sidewalks or streets</li>
                     <li class="flex items-center"><span class="text-[var(--pe-orange)] mr-2">💡</span> Broken streetlights</li>
@@ -150,25 +150,25 @@
 
         <!-- Contenu : ES -->
         <section id="lang-es" class="lang-section animate-fade-in">
-            <div class="bg-white rounded-2xl shadow-xl p-8">
-                <h2 class="text-3xl font-bold mb-4 text-[var(--pe-text-main)]">Su poder de actuar en Parc-Extension</h2>
-                <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+            <div class="bg-[#3A8E40] rounded-2xl shadow-xl p-8">
+                <h2 class="text-3xl font-bold mb-4 text-[var(--pe-orange)]">Su poder de actuar en Parc-Extension</h2>
+                <p class="text-lg text-[var(--pe-text-main)] mb-8 leading-relaxed">
                     Cada reporte es una acción concreta para nuestro barrio. Al usar el <span class="highlight-311">311</span>, usted se convierte en los ojos de la Ciudad. <strong>Su intervención es esencial</strong> para mantener nuestro entorno limpio y seguro.
                 </p>
                 <div class="grid md:grid-cols-2 gap-6 mb-10">
-                    <div class="border-2 border-[var(--pe-gray-light)] p-6 rounded-xl bg-white">
+                    <div class="border-2 border-[var(--pe-gray-light)] p-6 rounded-xl bg-[#3A8E40]">
                         <h3 class="font-bold text-xl mb-3 flex items-center">📱 App <span class="highlight-311">311</span></h3>
-                        <p class="text-sm text-gray-600 mb-4">La forma más rápida de reportar (con foto): baches, grafitis o luces fundidas.</p>
+                        <p class="text-sm text-[var(--pe-text-main)] mb-4">La forma más rápida de reportar (con foto): baches, grafitis o luces fundidas.</p>
                         <a href="#" class="block text-center bg-[var(--pe-orange)] text-white font-bold py-2 rounded-lg">Descargar App</a>
                     </div>
-                    <div class="border-2 border-[var(--pe-gray-light)] p-6 rounded-xl bg-white">
+                    <div class="border-2 border-[var(--pe-gray-light)] p-6 rounded-xl bg-[#3A8E40]">
                         <h3 class="font-bold text-xl mb-3 flex items-center">📞 Llamar al <span class="highlight-311">311</span></h3>
-                        <p class="text-sm text-gray-600 mb-4">Hable con un agente los 7 días de la semana para cualquier duda municipal.</p>
+                        <p class="text-sm text-[var(--pe-text-main)] mb-4">Hable con un agente los 7 días de la semana para cualquier duda municipal.</p>
                         <p class="font-bold text-[var(--pe-text-main)] text-center text-lg mt-2">Marque <span class="highlight-311">311</span></p>
                     </div>
                 </div>
-                <h3 class="font-bold text-xl mb-4 text-[var(--pe-text-main)]">Intervenga para:</h3>
-                <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 text-gray-700">
+                <h3 class="font-bold text-xl mb-4 text-[var(--pe-orange)]">Intervenga para:</h3>
+                <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 text-[var(--pe-text-main)]">
                     <li class="flex items-center"><span class="text-[var(--pe-orange)] mr-2">🗑️</span> Recolección de basura omitida</li>
                     <li class="flex items-center"><span class="text-[var(--pe-orange)] mr-2">🚧</span> Aceras o calles dañadas</li>
                     <li class="flex items-center"><span class="text-[var(--pe-orange)] mr-2">💡</span> Alumbrado público roto</li>
@@ -180,25 +180,25 @@
 
         <!-- Contenu : GR -->
         <section id="lang-gr" class="lang-section animate-fade-in">
-            <div class="bg-white rounded-2xl shadow-xl p-8">
-                <h2 class="text-3xl font-bold mb-4 text-[var(--pe-text-main)]">Η δύναμή σας να δράσετε στο Parc-Extension</h2>
-                <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+            <div class="bg-[#3A8E40] rounded-2xl shadow-xl p-8">
+                <h2 class="text-3xl font-bold mb-4 text-[var(--pe-orange)]">Η δύναμή σας να δράσετε στο Parc-Extension</h2>
+                <p class="text-lg text-[var(--pe-text-main)] mb-8 leading-relaxed">
                     Κάθε αναφορά είναι μια συγκεκριμένη ενέργεια για τη γειτονιά μας. Χρησιμοποιώντας το <span class="highlight-311">311</span>, γίνεστε τα μάτια της πόλης. <strong>Η παρέμβασή σας είναι απαραίτητη</strong> για να διατηρήσουμε το περιβάλλον μας καθαρό και ασφαλές.
                 </p>
                 <div class="grid md:grid-cols-2 gap-6 mb-10">
-                    <div class="border-2 border-[var(--pe-gray-light)] p-6 rounded-xl bg-white">
+                    <div class="border-2 border-[var(--pe-gray-light)] p-6 rounded-xl bg-[#3A8E40]">
                         <h3 class="font-bold text-xl mb-3 flex items-center">📱 Εφαρμογή <span class="highlight-311">311</span></h3>
-                        <p class="text-sm text-gray-600 mb-4">Ο ταχύτερος τρόπος αναφοράς (με φωτογραφία): λακκούβες, γκράφιτι, σπασμένα φώτα.</p>
+                        <p class="text-sm text-[var(--pe-text-main)] mb-4">Ο ταχύτερος τρόπος αναφοράς (με φωτογραφία): λακκούβες, γκράφιτι, σπασμένα φώτα.</p>
                         <a href="#" class="block text-center bg-[var(--pe-orange)] text-white font-bold py-2 rounded-lg">Λήψη Εφαρμογής</a>
                     </div>
-                    <div class="border-2 border-[var(--pe-gray-light)] p-6 rounded-xl bg-white">
+                    <div class="border-2 border-[var(--pe-gray-light)] p-6 rounded-xl bg-[#3A8E40]">
                         <h3 class="font-bold text-xl mb-3 flex items-center">📞 Καλέστε <span class="highlight-311">311</span></h3>
-                        <p class="text-sm text-gray-600 mb-4">Μιλήστε με εκπρόσωπο 7 ημέρες την εβδομάδα για οποιαδήποτε δημοτική υπηρεσία.</p>
+                        <p class="text-sm text-[var(--pe-text-main)] mb-4">Μιλήστε με εκπρόσωπο 7 ημέρες την εβδομάδα για οποιαδήποτε δημοτική υπηρεσία.</p>
                         <p class="font-bold text-[var(--pe-text-main)] text-center text-lg mt-2">Καλέστε το <span class="highlight-311">311</span></p>
                     </div>
                 </div>
-                <h3 class="font-bold text-xl mb-4 text-[var(--pe-text-main)]">Δράστε για:</h3>
-                <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 text-gray-700">
+                <h3 class="font-bold text-xl mb-4 text-[var(--pe-orange)]">Δράστε για:</h3>
+                <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 text-[var(--pe-text-main)]">
                     <li class="flex items-center"><span class="text-[var(--pe-orange)] mr-2">🗑️</span> Μη περισυλλογή σκουπιδιών</li>
                     <li class="flex items-center"><span class="text-[var(--pe-orange)] mr-2">🚧</span> Κατεστραμμένα πεζοδρόμια</li>
                     <li class="flex items-center"><span class="text-[var(--pe-orange)] mr-2">💡</span> Προβλήματα φωτισμού</li>
@@ -210,25 +210,25 @@
 
         <!-- Contenu : PA -->
         <section id="lang-pa" class="lang-section animate-fade-in">
-            <div class="bg-white rounded-2xl shadow-xl p-8">
-                <h2 class="text-3xl font-bold mb-4 text-[var(--pe-text-main)]">ਪਾਰਕ-ਐਕਸਟੈਂਸ਼ਨ ਵਿੱਚ ਕਾਰਵਾਈ ਕਰਨ ਦੀ ਤੁਹਾਡੀ ਸ਼ਕਤੀ</h2>
-                <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+            <div class="bg-[#3A8E40] rounded-2xl shadow-xl p-8">
+                <h2 class="text-3xl font-bold mb-4 text-[var(--pe-orange)]">ਪਾਰਕ-ਐਕਸਟੈਂਸ਼ਨ ਵਿੱਚ ਕਾਰਵਾਈ ਕਰਨ ਦੀ ਤੁਹਾਡੀ ਸ਼ਕਤੀ</h2>
+                <p class="text-lg text-[var(--pe-text-main)] mb-8 leading-relaxed">
                     ਹਰ ਰਿਪੋਰਟ ਸਾਡੇ ਇਲਾਕੇ ਲਈ ਇਕ ਠੋਸ ਕਦਮ ਹੈ। <span class="highlight-311">311</span> ਦੀ ਵਰਤੋਂ ਕਰਕੇ, ਤੁਸੀਂ ਸ਼ਹਿਰ ਦੀਆਂ ਅੱਖਾਂ ਬਣ ਜਾਂਦੇ ਹੋ। <strong>ਤੁਹਾਡਾ ਦਖਲ ਸਾਡੇ ਰਹਿਣ ਦੇ ਵਾਤਾਵਰਣ ਨੂੰ ਸਾਫ਼ ਅਤੇ ਸੁਰੱਖਿਅਤ ਰੱਖਣ ਲਈ ਜ਼ਰੂਰੀ ਹੈ।</strong>
                 </p>
                 <div class="grid md:grid-cols-2 gap-6 mb-10">
-                    <div class="border-2 border-[var(--pe-gray-light)] p-6 rounded-xl bg-white">
+                    <div class="border-2 border-[var(--pe-gray-light)] p-6 rounded-xl bg-[#3A8E40]">
                         <h3 class="font-bold text-xl mb-3 flex items-center">📱 <span class="highlight-311">311</span> ਐਪ</h3>
-                        <p class="text-sm text-gray-600 mb-4">ਰਿਪੋਰਟ ਕਰਨ ਦਾ ਸਭ ਤੋਂ ਤੇਜ਼ ਤਰੀਕਾ (ਫੋਟੋ ਨਾਲ): ਟੋਏ, ਗ੍ਰੈਫਿਟੀ, ਜਾਂ ਟੁੱਟੀਆਂ ਲਾਈਟਾਂ।</p>
+                        <p class="text-sm text-[var(--pe-text-main)] mb-4">ਰਿਪੋਰਟ ਕਰਨ ਦਾ ਸਭ ਤੋਂ ਤੇਜ਼ ਤਰੀਕਾ (ਫੋਟੋ ਨਾਲ): ਟੋਏ, ਗ੍ਰੈਫਿਟੀ, ਜਾਂ ਟੁੱਟੀਆਂ ਲਾਈਟਾਂ।</p>
                         <a href="#" class="block text-center bg-[var(--pe-orange)] text-white font-bold py-2 rounded-lg">ਐਪ ਡਾਊਨਲੋਡ ਕਰੋ</a>
                     </div>
-                    <div class="border-2 border-[var(--pe-gray-light)] p-6 rounded-xl bg-white">
+                    <div class="border-2 border-[var(--pe-gray-light)] p-6 rounded-xl bg-[#3A8E40]">
                         <h3 class="font-bold text-xl mb-3 flex items-center">📞 <span class="highlight-311">311</span> 'ਤੇ ਕਾਲ ਕਰੋ</h3>
-                        <p class="text-sm text-gray-600 mb-4">ਨਗਰ ਨਿਗਮ ਸੇਵਾਵਾਂ ਬਾਰੇ ਕਿਸੇ ਵੀ ਸਵਾਲ ਲਈ ਹਫ਼ਤੇ ਦੇ 7 ਦਿਨ ਗੱਲ ਕਰੋ।</p>
+                        <p class="text-sm text-[var(--pe-text-main)] mb-4">ਨਗਰ ਨਿਗਮ ਸੇਵਾਵਾਂ ਬਾਰੇ ਕਿਸੇ ਵੀ ਸਵਾਲ ਲਈ ਹਫ਼ਤੇ ਦੇ 7 ਦਿਨ ਗੱਲ ਕਰੋ।</p>
                         <p class="font-bold text-[var(--pe-text-main)] text-center text-lg mt-2"><span class="highlight-311">311</span> ਡਾਇਲ ਕਰੋ</p>
                     </div>
                 </div>
-                <h3 class="font-bold text-xl mb-4 text-[var(--pe-text-main)]">ਇਸ ਲਈ ਕਾਰਵਾਈ ਕਰੋ:</h3>
-                <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 text-gray-700">
+                <h3 class="font-bold text-xl mb-4 text-[var(--pe-orange)]">ਇਸ ਲਈ ਕਾਰਵਾਈ ਕਰੋ:</h3>
+                <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 text-[var(--pe-text-main)]">
                     <li class="flex items-center"><span class="text-[var(--pe-orange)] mr-2">🗑️</span> ਕੂੜਾ ਨਾ ਚੁੱਕਿਆ ਜਾਣਾ</li>
                     <li class="flex items-center"><span class="text-[var(--pe-orange)] mr-2">🚧</span> ਟੁੱਟੇ ਹੋਏ ਫੁੱਟਪਾਥ ਜਾਂ ਸੜਕਾਂ</li>
                     <li class="flex items-center"><span class="text-[var(--pe-orange)] mr-2">💡</span> ਖਰਾਬ ਸਟ੍ਰੀਟ ਲਾਈਟਾਂ</li>
@@ -240,25 +240,25 @@
 
         <!-- Contenu : BN -->
         <section id="lang-bn" class="lang-section animate-fade-in">
-            <div class="bg-white rounded-2xl shadow-xl p-8">
-                <h2 class="text-3xl font-bold mb-4 text-[var(--pe-text-main)]">পার্ক-এক্সটেনশনে কাজ করার আপনার ক্ষমতা</h2>
-                <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+            <div class="bg-[#3A8E40] rounded-2xl shadow-xl p-8">
+                <h2 class="text-3xl font-bold mb-4 text-[var(--pe-orange)]">পার্ক-এক্সটেনশনে কাজ করার আপনার ক্ষমতা</h2>
+                <p class="text-lg text-[var(--pe-text-main)] mb-8 leading-relaxed">
                     প্রতিটি রিপোর্ট আমাদের এলাকার জন্য একটি বাস্তব পদক্ষেপ। <span class="highlight-311">৩১১</span> ব্যবহার করে, আপনি শহরের চোখ হয়ে উঠছেন। <strong>আমাদের পরিবেশ পরিষ্কার এবং নিরাপদ রাখতে আপনার হস্তক্ষেপ অপরিহার্য।</strong>
                 </p>
                 <div class="grid md:grid-cols-2 gap-6 mb-10">
-                    <div class="border-2 border-[var(--pe-gray-light)] p-6 rounded-xl bg-white">
+                    <div class="border-2 border-[var(--pe-gray-light)] p-6 rounded-xl bg-[#3A8E40]">
                         <h3 class="font-bold text-xl mb-3 flex items-center">📱 <span class="highlight-311">৩১১</span> অ্যাপ</h3>
-                        <p class="text-sm text-gray-600 mb-4">রিপোর্ট করার দ্রুততম উপায়: রাস্তার গর্ত, গ্রাফিতি বা রাস্তার আলো নষ্ট হওয়া।</p>
+                        <p class="text-sm text-[var(--pe-text-main)] mb-4">রিপোর্ট করার দ্রুততম উপায়: রাস্তার গর্ত, গ্রাফিতি বা রাস্তার আলো নষ্ট হওয়া।</p>
                         <a href="#" class="block text-center bg-[var(--pe-orange)] text-white font-bold py-2 rounded-lg">অ্যাপ ডাউনলোড করুন</a>
                     </div>
-                    <div class="border-2 border-[var(--pe-gray-light)] p-6 rounded-xl bg-white">
+                    <div class="border-2 border-[var(--pe-gray-light)] p-6 rounded-xl bg-[#3A8E40]">
                         <h3 class="font-bold text-xl mb-3 flex items-center">📞 <span class="highlight-311">৩১১</span> এ কল করুন</h3>
-                        <p class="text-sm text-gray-600 mb-4">পৌরসভা সংক্রান্ত যেকোনো প্রশ্নের জন্য সপ্তাহে ৭ দিন কথা বলুন।</p>
+                        <p class="text-sm text-[var(--pe-text-main)] mb-4">পৌরসভা সংক্রান্ত যেকোনো প্রশ্নের জন্য সপ্তাহে ৭ দিন কথা বলুন।</p>
                         <p class="font-bold text-[var(--pe-text-main)] text-center text-lg mt-2"><span class="highlight-311">৩১১</span> ডায়াল করুন</p>
                     </div>
                 </div>
-                <h3 class="font-bold text-xl mb-4 text-[var(--pe-text-main)]">পদক্ষেপ নিন:</h3>
-                <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 text-gray-700">
+                <h3 class="font-bold text-xl mb-4 text-[var(--pe-orange)]">পদক্ষেপ নিন:</h3>
+                <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 text-[var(--pe-text-main)]">
                     <li class="flex items-center"><span class="text-[var(--pe-orange)] mr-2">🗑️</span> আবর্জনা সংগ্রহ না করা</li>
                     <li class="flex items-center"><span class="text-[var(--pe-orange)] mr-2">🚧</span> ক্ষতিগ্রস্ত ফুটপাত বা রাস্তা</li>
                     <li class="flex items-center"><span class="text-[var(--pe-orange)] mr-2">💡</span> নষ্ট রাস্তার আলো</li>
@@ -270,25 +270,25 @@
 
         <!-- Contenu : UR -->
         <section id="lang-ur" class="lang-section animate-fade-in text-right" dir="rtl">
-            <div class="bg-white rounded-2xl shadow-xl p-8">
-                <h2 class="text-3xl font-bold mb-4 text-[var(--pe-text-main)]">پارک ایکسٹینشن میں آپ کے عمل کی طاقت</h2>
-                <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+            <div class="bg-[#3A8E40] rounded-2xl shadow-xl p-8">
+                <h2 class="text-3xl font-bold mb-4 text-[var(--pe-orange)]">پارک ایکسٹینشن میں آپ کے عمل کی طاقت</h2>
+                <p class="text-lg text-[var(--pe-text-main)] mb-8 leading-relaxed">
                     ہر رپورٹ ہمارے پڑوس کے لیے ایک ٹھوس عمل ہے۔ <span class="highlight-311">311</span> کا استعمال کرکے، آپ شہر کی آنکھیں بن جاتے ہیں۔ اپنے ماحول کو صاف ستھرا اور محفوظ رکھنے کے لیے <strong>آپ کی مداخلت ضروری ہے</strong>۔
                 </p>
                 <div class="grid md:grid-cols-2 gap-6 mb-10">
-                    <div class="border-2 border-[var(--pe-gray-light)] p-6 rounded-xl bg-white text-right">
+                    <div class="border-2 border-[var(--pe-gray-light)] p-6 rounded-xl bg-[#3A8E40] text-right">
                         <h3 class="font-bold text-xl mb-3 flex items-center">📱 <span class="highlight-311">311</span> ایپ</h3>
-                        <p class="text-sm text-gray-600 mb-4">رپورٹ کرنے کا تیز ترین طریقہ: سڑک کے گڑھے، دیواروں پر لکھائی، یا بجلی کے کھمبے کی خرابی۔</p>
+                        <p class="text-sm text-[var(--pe-text-main)] mb-4">رپورٹ کرنے کا تیز ترین طریقہ: سڑک کے گڑھے، دیواروں پر لکھائی، یا بجلی کے کھمبے کی خرابی۔</p>
                         <a href="#" class="block text-center bg-[var(--pe-orange)] text-white font-bold py-2 rounded-lg">ایپ ڈاؤن لوڈ کریں</a>
                     </div>
-                    <div class="border-2 border-[var(--pe-gray-light)] p-6 rounded-xl bg-white text-right">
+                    <div class="border-2 border-[var(--pe-gray-light)] p-6 rounded-xl bg-[#3A8E40] text-right">
                         <h3 class="font-bold text-xl mb-3 flex items-center">📞 <span class="highlight-311">311</span> پر کال کریں</h3>
-                        <p class="text-sm text-gray-600 mb-4">بلدیاتی خدمات کے بارے میں کسی بھی سوال کے لیے ہفتے کے 7 دن ایجنٹ سے بات کریں۔</p>
+                        <p class="text-sm text-[var(--pe-text-main)] mb-4">بلدیاتی خدمات کے بارے میں کسی بھی سوال کے لیے ہفتے کے 7 دن ایجنٹ سے بات کریں۔</p>
                         <p class="font-bold text-[var(--pe-text-main)] text-center text-lg mt-2"><span class="highlight-311">311</span> ڈائل کریں</p>
                     </div>
                 </div>
-                <h3 class="font-bold text-xl mb-4 text-[var(--pe-text-main)]">کارروائی کریں:</h3>
-                <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 text-gray-700 text-right" dir="rtl">
+                <h3 class="font-bold text-xl mb-4 text-[var(--pe-orange)]">کارروائی کریں:</h3>
+                <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 text-[var(--pe-text-main)] text-right" dir="rtl">
                     <li class="flex items-center"><span class="text-[var(--pe-orange)] ml-2">🗑️</span> کچرا نہ اٹھایا جانا</li>
                     <li class="flex items-center"><span class="text-[var(--pe-orange)] ml-2">🚧</span> ٹوٹی ہوئی فٹ پاتھ یا سڑکیں</li>
                     <li class="flex items-center"><span class="text-[var(--pe-orange)] ml-2">💡</span> خراب اسٹریٹ لائٹس</li>
@@ -300,25 +300,25 @@
 
         <!-- Contenu : HI -->
         <section id="lang-hi" class="lang-section animate-fade-in">
-            <div class="bg-white rounded-2xl shadow-xl p-8">
-                <h2 class="text-3xl font-bold mb-4 text-[var(--pe-text-main)]">पार्क-एक्सटेंशन में कार्रवाई करने की आपकी शक्ति</h2>
-                <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+            <div class="bg-[#3A8E40] rounded-2xl shadow-xl p-8">
+                <h2 class="text-3xl font-bold mb-4 text-[var(--pe-orange)]">पार्क-एक्सटेंशन में कार्रवाई करने की आपकी शक्ति</h2>
+                <p class="text-lg text-[var(--pe-text-main)] mb-8 leading-relaxed">
                     प्रत्येक रिपोर्ट हमारे पड़ोस के लिए एक ठोस कार्रवाई है। <span class="highlight-311">311</span> का उपयोग करके, आप शहर की आँखें बन जाते हैं। <strong>हमारे परिवेश को स्वच्छ और सुरक्षित रखने के लिए आपका हस्तक्षेप अनिवार्य है।</strong>
                 </p>
                 <div class="grid md:grid-cols-2 gap-6 mb-10">
-                    <div class="border-2 border-[var(--pe-gray-light)] p-6 rounded-xl bg-white">
+                    <div class="border-2 border-[var(--pe-gray-light)] p-6 rounded-xl bg-[#3A8E40]">
                         <h3 class="font-bold text-xl mb-3 flex items-center">📱 <span class="highlight-311">311</span> ऐप</h3>
-                        <p class="text-sm text-gray-600 mb-4">शिकायत करने का सबसे तेज़ तरीका: गड्ढे, ग्राफिटी या खराब स्ट्रीटलाइट।</p>
+                        <p class="text-sm text-[var(--pe-text-main)] mb-4">शिकायत करने का सबसे तेज़ तरीका: गड्ढे, ग्राफिटी या खराब स्ट्रीटलाइट।</p>
                         <a href="#" class="block text-center bg-[var(--pe-orange)] text-white font-bold py-2 rounded-lg">ऐप डाउनलोड करें</a>
                     </div>
-                    <div class="border-2 border-[var(--pe-gray-light)] p-6 rounded-xl bg-white">
+                    <div class="border-2 border-[var(--pe-gray-light)] p-6 rounded-xl bg-[#3A8E40]">
                         <h3 class="font-bold text-xl mb-3 flex items-center">📞 <span class="highlight-311">311</span> पर कॉल करें</h3>
-                        <p class="text-sm text-gray-600 mb-4">नगरपालिका सेवाओं के बारे में किसी भी प्रश्न के लिए सप्ताह के 7 दिन बात करें।</p>
+                        <p class="text-sm text-[var(--pe-text-main)] mb-4">नगरपालिका सेवाओं के बारे में किसी भी प्रश्न के लिए सप्ताह के 7 दिन बात करें।</p>
                         <p class="font-bold text-[var(--pe-text-main)] text-center text-lg mt-2"><span class="highlight-311">311</span> डायल करें</p>
                     </div>
                 </div>
-                <h3 class="font-bold text-xl mb-4 text-[var(--pe-text-main)]">इसके लिए कार्रवाई करें:</h3>
-                <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 text-gray-700">
+                <h3 class="font-bold text-xl mb-4 text-[var(--pe-orange)]">इसके लिए कार्रवाई करें:</h3>
+                <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 text-[var(--pe-text-main)]">
                     <li class="flex items-center"><span class="text-[var(--pe-orange)] mr-2">🗑️</span> कूड़ा न उठाया जाना</li>
                     <li class="flex items-center"><span class="text-[var(--pe-orange)] mr-2">🚧</span> टूटे हुए फुटपाथ या सड़कें</li>
                     <li class="flex items-center"><span class="text-[var(--pe-orange)] mr-2">💡</span> खराब स्ट्रीट लाइटें</li>
