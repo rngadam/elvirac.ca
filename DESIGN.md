@@ -1,58 +1,52 @@
-### Spécification Visuelle : Look Moderne « Safran et Terre de Sienne »
+### Spécification Visuelle : Look Moderne « Projet Montréal Vert & Jaune »
 
 **Palette de Couleurs**
 
-* **Couleur Principale (Fond) :** Blanc pur (`#FFFFFF`). Un fond blanc est essentiel pour un look moderne, offrant une clarté maximale et faisant ressortir les couleurs d'accentuation.
-* **Couleur d'Accentuation Primaire (Le Safran de Parc-Ex) :** Safran chaud (`#F0943A`). Inspiré des épices et des textiles colorés des communautés d'Asie du Sud. Cette couleur doit être vibrante sans être agressive.
-* **Couleur de Texte Principale :** Gris Ardoise Foncée (`#333333`). Préférer le gris foncé au noir pur pour une lecture plus douce et un rendu plus moderne.
-* **Couleur des Liens/CTA (Le Terre de Sienne) :** Terre de Sienne brûlée (`#B5582F`). Une couleur terreuse et riche, qui rappelle l'authenticité urbaine et contraste bien avec le safran.
-* **Couleur Secondaire d'Accentuation (Le Bleu Métropolitain) :** Bleu Cobalt ( `#0055A4`). Utilisé par touches très subtiles pour le contraste et en clin d'œil à l'histoire grecque, mais pas comme couleur dominante.
-* **Couleur de Séparateur/Bordure :** Gris Très Clair (`#EEEEEE`). Pour des délimitations nettes et fines.
+* **Couleur Principale (Fond) :** Vert Projet Montréal (`#3A8E40`). Un fond vert solide qui rappelle l'identité visuelle du parti Projet Montréal.
+* **Couleur d'Accentuation Primaire (Le Jaune) :** Jaune (`#F0C044`). Utilisé pour faire ressortir des éléments clés comme les liens, les boutons, et le "311". Cette couleur offre un fort contraste avec le vert tout en conservant l'identité visuelle.
+* **Couleur de Texte Principale :** Blanc (`#FFFFFF`). Essentiel pour une lecture claire et optimale sur le fond vert (satisfait les standards d'accessibilité WCAG AA).
+* **Couleur de Texte Sombre :** Gris Ardoise Foncée (`#333333`). Utilisé spécifiquement pour le texte à l'intérieur des boutons jaunes pour assurer une parfaite lisibilité et contraste.
+* **Couleur de Fond au Survol :** Vert plus foncé (`#327A37`). Permet de donner un feedback visuel subtil lors du survol des cartes ou éléments interactifs.
+* **Couleur de Séparateur/Bordure :** Blanc Translucide (`rgba(255, 255, 255, 0.2)`). Pour des délimitations nettes et fines qui s'intègrent bien avec le fond vert.
 
 ---
 
-### Application de la Palette sur la Page (Moderne)
+### Application de la Palette sur la Page
 
-* **Bannière d'Avertissement (Top) :**
-    * **Fond :** Safran Chaud (`#F0943A`). Remplace le rouge pour un impact immédiat mais moins alarmiste, reflétant l'énergie du quartier.
-    * **Texte :** Gris Foncée (`#333333`). Pour une lisibilité claire sur le safran.
+* **Arrière-plan Global (body) :**
+    * **Fond :** Vert Projet Montréal (`#3A8E40`).
 
-* **En-tête (Header - Zone Bleue Actuelle) :**
-    * **Fond :** Blanc (`#FFFFFF`). Épurer l'en-tête pour un look "sans bordure" moderne.
-    * **Initiales "EC" :** Terre de Sienne brûlée (`#B5582F`) dans un cercle aux bords ultra-fins Gris Clair (`#EEEEEE`).
-    * **Nom et Titre :** Gris Ardoise Foncée (`#333333`).
+* **En-tête (Header) :**
+    * **Fond :** Vert Projet Montréal (`#3A8E40`).
+    * **Textes et Titres :** Blanc (`#FFFFFF`).
 
 * **Navigation Linguistique (Sélection de Langue) :**
-    * **Texte de la langue active :** Terre de Sienne brûlée (`#B5582F`).
-    * **Barre de soulignement de la langue active :** Terre de Sienne brûlée (`#B5582F`).
-    * **Textes des autres langues :** Gris Foncée (`#333333`).
+    * **Fond :** Vert Projet Montréal (`#3A8E40`).
+    * **Texte de la langue active :** Jaune (`#F0C044`).
+    * **Barre de soulignement de la langue active :** Jaune (`#F0C044`).
+    * **Textes des autres langues :** Blanc (`#FFFFFF`).
 
-* **Titre Principal ("Votre pouvoir d'agir...") :**
-    * **Couleur :** Gris Ardoise Foncée (`#333333`) ou, pour un impact plus direct, Terre de Sienne brûlée (`#B5582F`).
+* **Contenu Principal & Cartes :**
+    * **Fond des cartes :** Vert Projet Montréal (`#3A8E40`).
+    * **Fond des cartes au survol :** Vert plus foncé (`#327A37`).
+    * **Couleur de Bordure :** Blanc Translucide (`rgba(255, 255, 255, 0.2)`).
+    * **Titre Principal & Sous-titres (H1, H2, H3) :** Blanc (`#FFFFFF`).
+    * **Corps de Texte :** Blanc (`#FFFFFF`).
+    * **Mise en évidence "311" :** Jaune (`#F0C044`).
 
-* **Corps de Texte :**
-    * **Couleur :** Gris Ardoise Foncée (`#333333`).
-    * **Gras :** Utiliser avec parcimonie pour un look aéré.
-
-* **Bouton d'Action (Télécharger l'app) :**
-    * **Fond :** Terre de Sienne brûlée (`#B5582F`). Remplace le bleu clair pour un point chaud distinct sur la page.
-    * **Texte :** Blanc (`#FFFFFF`).
-
-* **Liste des Tâches ("Intervenez pour :") :**
-    * **Icônes Checkmark :** Terre de Sienne brûlée (`#B5582F`).
-    * **Texte :** Gris Foncée (`#333333`).
+* **Bouton d'Action Primaire (Télécharger l'app, etc) :**
+    * **Fond :** Jaune (`#F0C044`).
+    * **Texte :** Gris Ardoise Foncée (`#333333`). Assure un contraste WCAG AA sur le fond jaune.
 
 * **Pied de Page (Footer) :**
-    * **Fond :** Gris Très Clair (`#F5F5F5`). Une teinte de gris très légère pour délimiter le pied de page du reste de la page.
-    * **Boutons "Écrire à Elvira" / "Profil officiel" :** Utiliser des boutons fantômes (outline buttons) Terre de Sienne brûlée (`#B5582F`) pour conserver un look léger.
-    * **Texte de Copyright :** Gris Moyen (`#777777`).
+    * **Fond :** Vert Foncé (`#2D7332`).
+    * **Boutons "Écrire à Elvira" / "Profil officiel" :** Utiliser des boutons fantômes (outline buttons) Jaune (`#F0C044`), qui deviennent Jaune uni au survol avec un texte Sombre (`#333333`).
+    * **Texte de Copyright :** Blanc (`#FFFFFF`).
 
 ---
 
-### Éléments de Design Moderne (au-delà de la couleur)
+### Éléments de Design (au-delà de la couleur)
 
 * **Typographie :** Utiliser une police *Sans-Serif* géométrique moderne et lisible (ex: Inter, Poppins, Roboto).
-* **Espaces :** Augmenter les marges et les espacements pour aérer le contenu et éviter la surcharge visuelle.
-* **Formes :** Privilégier des angles légèrement arrondis (border-radius) pour les boutons et les boîtes d'information pour un look plus doux et contemporain.
-
-Cette spécification vise à transformer la page d'un look institutionnel vers une esthétique qui célèbre l'histoire et le multiculturalisme de Parc-Extension de manière moderne et invitante.
+* **Espaces :** Marges et espacements adéquats pour aérer le contenu et éviter la surcharge visuelle sur un fond sombre.
+* **Formes :** Angles légèrement arrondis (border-radius) pour les boutons et les boîtes d'information pour un look doux et contemporain.
