@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <!-- Cadre extérieur -->
+  <rect x="25" y="25" width="950" height="950" rx="40" fill="white" stroke="#546e7a" stroke-width="15"/>
+  
+  <g fill="white" stroke="#546e7a" stroke-width="8" stroke-linejoin="round" stroke-linecap="round">
+    
+    <!-- Crochets latéraux (Brackets) -->
+    <polygon points="150,220 90,220 60,250 30,250 30,265 70,265 100,235 150,235"/>
+    <polygon points="850,220 910,220 940,250 970,250 970,265 930,265 900,235 850,235"/>
+
+    <!-- Toit (Niveaux gradués) -->
+    <rect x="330" y="160" width="340" height="25"/>
+    <rect x="220" y="185" width="560" height="25"/>
+    <rect x="150" y="210" width="700" height="30"/>
+    <rect x="110" y="240" width="780" height="25"/>
+    <rect x="90" y="265" width="820" height="35"/>
+
+    <!-- Piliers extérieurs massifs -->
+    <rect x="80" y="300" width="80" height="460"/>
+    <rect x="75" y="300" width="90" height="25"/>
+    <path d="M 80,340 h 80"/>
+    <rect x="70" y="760" width="100" height="20"/>
+
+    <rect x="840" y="300" width="80" height="460"/>
+    <rect x="835" y="300" width="90" height="25"/>
+    <path d="M 840,340 h 80"/>
+    <rect x="830" y="760" width="100" height="20"/>
+
+    <!-- Bandeau principal et corniches -->
+    <rect x="160" y="350" width="680" height="15"/>
+    <rect x="155" y="365" width="690" height="15"/>
+    <rect x="160" y="380" width="680" height="60"/>
+
+    <!-- Colonnes intermédiaires (4 colonnes) -->
+    <rect x="264" y="440" width="40" height="305"/>
+    <rect x="259" y="440" width="50" height="15"/>
+    <rect x="259" y="745" width="50" height="15"/>
+    <rect x="254" y="760" width="60" height="20"/>
+
+    <rect x="408" y="440" width="40" height="305"/>
+    <rect x="403" y="440" width="50" height="15"/>
+    <rect x="403" y="745" width="50" height="15"/>
+    <rect x="398" y="760" width="60" height="20"/>
+
+    <rect x="552" y="440" width="40" height="305"/>
+    <rect x="547" y="440" width="50" height="15"/>
+    <rect x="547" y="745" width="50" height="15"/>
+    <rect x="542" y="760" width="60" height="20"/>
+
+    <rect x="696" y="440" width="40" height="305"/>
+    <rect x="691" y="440" width="50" height="15"/>
+    <rect x="691" y="745" width="50" height="15"/>
+    <rect x="686" y="760" width="60" height="20"/>
+
+    <!-- Ligne de sol -->
+    <path d="M 40,780 h 920"/>
+
+    <!-- Fenêtres en arche (alignées au-dessus des colonnes) -->
+    <g stroke-width="6">
+      <path d="M 239,350 v-15 a 45,45 0 0 1 90,0 v15 Z"/>
+      <path d="M 269,350 v-27 M 299,350 v-27"/>
+
+      <path d="M 383,350 v-15 a 45,45 0 0 1 90,0 v15 Z"/>
+      <path d="M 413,350 v-27 M 443,350 v-27"/>
+
+      <path d="M 527,350 v-15 a 45,45 0 0 1 90,0 v15 Z"/>
+      <path d="M 557,350 v-27 M 587,350 v-27"/>
+
+      <path d="M 671,350 v-15 a 45,45 0 0 1 90,0 v15 Z"/>
+      <path d="M 701,350 v-27 M 731,350 v-27"/>
+    </g>
+
+    <!-- Grilles de fenêtres et portes (5 sections) -->
+    <g stroke-width="5">
+      <!-- Section 1 -->
+      <rect x="172" y="465" width="80" height="150"/>
+      <path d="M 172,503 h80 M 172,540 h80 M 172,577 h80 M 199,465 v150 M 225,465 v150"/>
+      <rect x="172" y="635" width="80" height="125"/>
+      <path d="M 172,665 h80 M 212,665 v95"/>
+      <rect x="178" y="673" width="28" height="87"/>
+      <rect x="218" y="673" width="28" height="87"/>
+
+      <!-- Section 2 -->
+      <rect x="316" y="465" width="80" height="150"/>
+      <path d="M 316,503 h80 M 316,540 h80 M 316,577 h80 M 343,465 v150 M 369,465 v150"/>
+      <rect x="316" y="635" width="80" height="125"/>
+      <path d="M 316,665 h80 M 356,665 v95"/>
+      <rect x="322" y="673" width="28" height="87"/>
+      <rect x="362" y="673" width="28" height="87"/>
+
+      <!-- Section 3 (Centre avec logo) -->
+      <rect x="460" y="465" width="80" height="150"/>
+      <path d="M 460,503 h80 M 460,540 h80 M 460,577 h80 M 487,465 v150 M 513,465 v150"/>
+      <rect x="460" y="635" width="80" height="125"/>
+      <path d="M 460,665 h80 M 500,665 v95"/>
+      <rect x="466" y="673" width="28" height="87"/>
+      <rect x="506" y="673" width="28" height="87"/>
+      
+      <!-- Logo Métro -->
+      <circle cx="500" cy="710" r="22" fill="white" stroke="none"/>
+      <circle cx="500" cy="710" r="18" fill="white" stroke="#546e7a"/>
+      <path d="M 500,698 v16 M 493,707 l 7,7 l 7,-7" fill="none" stroke="#546e7a" stroke-width="4"/>
+
+      <!-- Section 4 -->
+      <rect x="604" y="465" width="80" height="150"/>
+      <path d="M 604,503 h80 M 604,540 h80 M 604,577 h80 M 631,465 v150 M 657,465 v150"/>
+      <rect x="604" y="635" width="80" height="125"/>
+      <path d="M 604,665 h80 M 644,665 v95"/>
+      <rect x="610" y="673" width="28" height="87"/>
+      <rect x="650" y="673" width="28" height="87"/>
+
+      <!-- Section 5 -->
+      <rect x="748" y="465" width="80" height="150"/>
+      <path d="M 748,503 h80 M 748,540 h80 M 748,577 h80 M 775,465 v150 M 801,465 v150"/>
+      <rect x="748" y="635" width="80" height="125"/>
+      <path d="M 748,665 h80 M 788,665 v95"/>
+      <rect x="754" y="673" width="28" height="87"/>
+      <rect x="794" y="673" width="28" height="87"/>
+    </g>
+  </g>
+
+  <!-- Texte -->
+  <text x="500" y="423" font-family="Montserrat, Helvetica, Arial, sans-serif" font-size="34" fill="#546e7a" text-anchor="middle" letter-spacing="10" font-weight="bold">PARC-EXTENSION</text>
+</svg>
