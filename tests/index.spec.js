@@ -39,6 +39,11 @@ test.describe('Elvira Carhuallanqui - Parc-Extension Project', () => {
       const highlights = section.locator('.highlight-311');
       const count = await highlights.count();
       expect(count).toBeGreaterThan(0);
+
+      // Check download app button link is not empty
+      const appLink = section.locator('a[href^="https://montreal.ca"]');
+      const appLinkCount = await appLink.count();
+      expect(appLinkCount).toBeGreaterThan(0);
     });
   });
 
